@@ -1,69 +1,143 @@
-# Recuperação de senha
+<h1 align="center">
+  🚀️ Back-end 💈️💇‍♂️️ GoBarber 💅️✂️
+</h1>
 
-**RF (Requisitos Funcionais)**
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jerp86/iniciando-back-end">
 
-- O usuário deve poder recuperar sua senha informando o seu e-mail;
-- O usuário deve receber um e-mail com instruções de recuperação de senha;
-- o usuário deve poder resetar sua senha;
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jerp86/iniciando-back-end?logo=typescript">
 
-**RNF (Requisitos Não Funcionais)**
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/jerp86/iniciando-back-end?color=green">
 
-- Utilizar Mailtrap para testar envios de desenvolvimento
-- Utilizar Amazon SES para envios em produção;
-- O envio de e-mails deve acontecer em segundo plano (background job);
+  <br>
 
-**RN (Regras de Negócio)**
+  <a href="https://app.codacy.com/manual/jerp86/iniciando-back-end?utm_source=github.com&utm_medium=referral&utm_content=jerp86/iniciando-back-end&utm_campaign=Badge_Grade_Dashboard">
+    <img alt="Codacy Badge" src="https://api.codacy.com/project/badge/Grade/cbc534ad09fd46b28d73b4c4e22a0667">
+  </a>
 
-- O link enviado por email para resetar senha, deve expirar em 2h;
-- O usuário precisa confirmar a nova senha ao resetar;
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/last-commit/jerp86/iniciando-back-end">
 
-# Atualização do perfil
+  <a href="https://www.linkedin.com/in/jerp/">
+    <img alt="Made by Jerp86" src="https://img.shields.io/badge/made%20by-Jerp86-%2304D361">
+  </a>
+</p>
 
-**RF (Requisitos Funcionais)**
+# Indice
 
-- O usuário deve poder atualizar seu nome, email e senha;
+- :rocket: [Sobre o Projeto](#rocket-sobre-o-projeto)
+- 👨‍💻️ [Tecnogias utilizadas](#%EF%B8%8F-tecnogias-utilizadas)
+- 📦️ [Como baixar o projeto](#%EF%B8%8F-como-baixar-o-projeto)
+- 🤔️ [Como contribuir](#%EF%B8%8F-como-contribuir)
 
-**RN (Regras de Negócio)**
+---
 
-- O usuário não pode alterar seu e-mail para um e-mail já utilizado;
-- para atualizar sua senha, o usuário deve informar a nova senha;
-- Para atualizar sua senha o usuario precisa confirmar a nova senha
+## :rocket: Sobre o Projeto
 
-# Painel do prestador
+A proposta do curso **Bootcamp GoStack** da [Rocketseat](https://rocketseat.com.br/) é desenvolver uma aplicação completa para barbearias e salões de beleza chamada GoBarber, onde os prestadores de serviço possam informar seus dias e horários disponíveis para o trabalho, enquanto os clientes possam optar pelo profissional que melhor se enquadre em sua escolha de dia e horário.
 
-**RF (Requisitos Funcionais)**
+O **Iniciando Back-end** é a construção do que será o Back-end do projeto final curso, o 💈️💇‍♂️️ **GoBarber** 💅️✂️.
 
-- O usuário deve poder listar seus agendamentos de um dia especifico
-- O prestador deve receber uma notificação sempre que houver um novo agendamento;
-- O prestador deve poder visualizar as notificações não lidas;
+Este projeto de Back-end será desenvolvido em Node.js com TypeScript no formato RESTFull utilizando as metodologias [DDD (Domain Driven Design)](https://en.wikipedia.org/wiki/Domain-driven_design) e [TDD (Test Driven Development)](https://pt.wikipedia.org/wiki/Test-driven_development).
 
-**RNF (Requisitos Não Funcionais)**
+---
 
-- os agendamentos do prestador no dia devem ser armazenados em cache;
-- As notificações do prestador devem ser armazendas no MongoDb;
+## 👨‍💻️ Tecnogias utilizadas
 
-**RN (Regras de Negócio)**
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- A notificação deve ter um status de lida ou não lida para que o prestador possa controlar
+- [Node.js](https://nodejs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-# Agendamento de serviços
+### Dependências
 
-**RF (Requisitos Funcionais)**
-- o usuário deve poder listar todos os prestadores de serviço cadastrados;
-- o usuário deve poder listar os dias de um mes com pelo menos um horário disponivel de um prestador;
-- O usuario deve poder listar horarios disponiveis em um dia especifico de um prestador
-- o usuario deve poder realizar um novo agendamento com um prestador;
+  - [Express](https://expressjs.com/)
+  - [Cors](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Controle_Acesso_CORS)
+  - :calendar: [Date-fns](https://date-fns.org/)
+  - :closed_lock_with_key: [BCrypt](https://github.com/kelektiv/node.bcrypt.js)
+  - [JWT](https://jwt.io/)
+  - :file_folder: [Multer](https://github.com/expressjs/multer)
+  - :id: [UUIDv4](https://github.com/thenativeweb/uuidv4)
+  - :black_joker: [Jest](https://jestjs.io/)
+  - :syringe: [TSyringe](https://github.com/microsoft/tsyringe)
+  - :wavy_dash: [Handlebars](https://handlebarsjs.com/)
+  - :incoming_envelope: [Nodemailer](https://nodemailer.com/about/)
+  - :tada: [Celebrate](https://github.com/arb/celebrate)
+  - [DotEnv](https://github.com/motdotla/dotenv)
+  - [Class-Transformer](https://github.com/typestack/class-transformer)
+  - [AWS-SDK](https://aws.amazon.com/pt/sdk-for-node-js/)
+  - [Mime](https://github.com/broofa/mime)
+  - [IoRedis](https://github.com/luin/ioredis)
+  - [Rate-Limiter-Flexible](https://github.com/animir/node-rate-limiter-flexible)
 
-**RNF (Requisitos Não Funcionais)**
+### Banco de Dados
+  - :elephant: [PostgreSQL](https://www.postgresql.org/)
+  - [MongoDB](https://www.mongodb.com/)
+  - [Redis](https://redis.io/)
+  - [DBeaver](https://dbeaver.io/)
+  - :whale: [Docker](https://www.docker.com/)
+  - [TypeORM](https://typeorm.io/)
 
-- A listagem de prestadores deve ser armazenada em cache;
+### Padronização de código
 
-**RN (Regras de Negócio)**
+  - [ESLint](https://eslint.org/)
+  - [Prettier](https://prettier.io/)
+  - :mouse: [Editor Config](https://editorconfig.org/)
 
-- Cada agendamento deve durar 1h exatamente;
-- Os agendamentos devem estar disponiveis entre 8h as 18h (primeiro as 7h, último as 17h)
-- O usuario não pode agendar em um horário já ocupado;
-- O usuário não pode agendar em um horário que já passou;
-- O usuário não pode agendar serviços consigo mesmo.
+### IDE
 
+  - [Visual Studio Code](https://code.visualstudio.com/)
 
+---
+
+## 📦️ Como baixar o projeto
+
+Para copiar o projeto, utilize os comandos:
+
+```bash
+  # Clonar o repositório
+  ❯ git clone https://github.com/jerp86/iniciando-back-end.git
+
+  # Entrar no diretório
+  ❯ cd iniciando-back-end
+```
+Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn ou NPM:
+
+**Utilizando yarn**
+
+```bash
+  # Instalar as dependências
+  ❯ yarn
+
+  # Iniciar o projeto
+  ❯ yarn dev:server
+```
+
+**Utilizando npm**
+
+*PS: Caso utilize o NPM, apaque o arquivo `yarn.lock` para ter todas as dependências instaladas da melhor forma.*
+
+```bash
+  # Instalar as dependências
+  ❯ npm install
+
+  # Iniciar o projeto
+  ❯ npm dev:server
+```
+
+---
+
+## 🤔️ Como contribuir
+
+1. Faça o `fork` deste repositório
+2. Crie uma branch com sua feature:
+   - `$ git checkout -b minha_feature`
+3. Confirme sua branch:
+   - `$ git commit -m "feature: Meu novo recurso"`
+4. Envie sua branch:
+   - `$ git push origin minha_feature`
+
+---
+
+<h4 align="center">
+  Feito com ❤️ por Vitor  👋️ <a href="mailto:vit.riber1@gmail.com">Entre em contato!</a>
+</h4>
