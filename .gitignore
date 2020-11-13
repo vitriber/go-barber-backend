@@ -10,5 +10,4 @@ yarn-error.log
 dist
 
 tmp/*
-tmp
 !tmp/.gitkeep
