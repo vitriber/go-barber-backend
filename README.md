@@ -2,26 +2,6 @@
   🚀️ Back-end 💈️💇‍♂️️ GoBarber 💅️✂️
 </h1>
 
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jerp86/iniciando-back-end">
-
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jerp86/iniciando-back-end?logo=typescript">
-
-  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/jerp86/iniciando-back-end?color=green">
-
-  <br>
-
-  <a href="https://app.codacy.com/manual/jerp86/iniciando-back-end?utm_source=github.com&utm_medium=referral&utm_content=jerp86/iniciando-back-end&utm_campaign=Badge_Grade_Dashboard">
-    <img alt="Codacy Badge" src="https://api.codacy.com/project/badge/Grade/cbc534ad09fd46b28d73b4c4e22a0667">
-  </a>
-
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/last-commit/jerp86/iniciando-back-end">
-
-  <a href="https://www.linkedin.com/in/jerp/">
-    <img alt="Made by Jerp86" src="https://img.shields.io/badge/made%20by-Jerp86-%2304D361">
-  </a>
-</p>
-
 # Indice
 
 - :rocket: [Sobre o Projeto](#rocket-sobre-o-projeto)
@@ -95,7 +75,7 @@ Para copiar o projeto, utilize os comandos:
 
 ```bash
   # Clonar o repositório
-  ❯ git clone https://github.com/jerp86/iniciando-back-end.git
+  ❯ git clone https://github.com/vitriber/go-barber-backend.git
 
   # Entrar no diretório
   ❯ cd iniciando-back-end
